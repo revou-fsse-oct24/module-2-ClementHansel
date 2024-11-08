@@ -1,931 +1,1149 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="JEMBATAN TIMBANG, JEMBATAN TIMBANG DINAMIS, WIM, SECURITY SYSTEM, CCTV, STRUCTURE HEALTH">
-        <meta name="description" content="PT.BKKA.CO.ID is a leading global company specializing in JEMBATAN TIMBANG, JEMBATAN TIMBANG DINAMIS, WIM, SECURITY SYSTEM, CCTV, STRUCTURE HEALTH">
-        <meta name="author" content="PT.BKKA.CO.ID">
-        <script src="https://kit.fontawesome.com/2985af7cb1.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="Index_New.js"></script>
-        <link rel="icon" href="Asset/LOGO PT/logoicon.ico" />
-        <title>PT.BKKA.CO.ID</title> <title>PT.BKKA.CO.ID</title>
-    </head>        
-    <body class="bg-white font-sans min-h-screen">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="JEMBATAN TIMBANG, JEMBATAN TIMBANG DINAMIS, WIM, SECURITY SYSTEM, CCTV, STRUCTURE HEALTH"
+    />
+    <meta
+      name="description"
+      content="PT.BKKA.CO.ID is a leading global company specializing in JEMBATAN TIMBANG, JEMBATAN TIMBANG DINAMIS, WIM, SECURITY SYSTEM, CCTV, STRUCTURE HEALTH"
+    />
+    <meta name="author" content="PT.BKKA.CO.ID" />
+    <script
+      src="https://kit.fontawesome.com/2985af7cb1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          fontFamily: {
+            sans: ["Roboto", "sans-serif"],
+            body: ["Roboto", "sans-serif"],
+            mono: ["ui-monospace", "monospace"],
+          },
+        },
+        corePlugins: { preflight: false },
+      };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="Index_New.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Index_New.css" />
+    <link rel="stylesheet" href="NewCSS.css" />
+    <link rel="icon" href="Asset/LOGO PT/logoicon.ico" />
+    <title>PT.BKKA.CO.ID</title>
+  </head>
+  <body class="bg-white font-sans min-h-screen">
+    <nav
+      class="fixed top-0 z-10 flex w-full flex-wrap items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-700 lg:py-4"
+    >
+      <div class="flex w-full flex-wrap items-center justify-between px-3">
+        <!-- Left elements -->
+        <div class="flex">
+          <!-- Brand -->
+          <a
+            class="mx-2 my-1 flex items-center lg:mb-0 lg:mt-0"
+            href="index.html"
+          >
+            <img
+              class="me-2 h-10"
+              src="Asset/LOGO PT/Logo-BKKA-Transparant.png"
+              alt="PT. BATUKARANG KENAN ABADI Logo"
+              loading="lazy"
+            />
+          </a>
+          <h1
+            class="hidden md:flex mx-2 my-1 items-center pt-2 text-blue-700 font-bold text-base"
+          >
+            PT. BATUKARANG KENAN ABADI
+          </h1>
+        </div>
+        <!-- Left elements -->
 
-        <!-- Navbar 
-        <header class="shadow md fixed w full z-10 transition-all duration-300">
-            <div class="container mx-auto px-4 py-4">
-                <div class="flex flex-wrap items-center justify-between">
-                    <a href="Index.html" class="">
-                        <img width="200" height="120" src="Asset/LOGO PT/logoicon.ico" class="attachment-full size-full wp-image-63065" alt="PT. BATUKARANG KENAN ABADI LOGO">
-                       
-                    </a>
-                    <h1 class="text-xs font-bold text-blue-500">PT. BATUKARANG KENAN ABADI</h1>
-                    <div class="relative">
-                        <input type="text" placeholder="Search..." class="w-full px-4 py-3 border rounded-2xl transition-all duration-300 focus:ring-2 focus:ring-blue-500 text-lg id=searchInput">
-                        <i class="fa-solid fa-magnifying-glass absolute right-3 top-3 text-grey-400 text-xl"></i>
-                    </div>
-                    <div>
-                    <button class="self-end">
-                        <i class="fa-solid fa-bars"></i>
-                        <ul>
-                            <li>
-                                <a href="Products.html">Products
-                                    <ul>
-                                        <li>
-                                            <a href="Sensors.html">Sensors</a>
-                                        </li>
-                                        <li>
-                                            <a href="Access_Control.html">Access Control</a>
-                                        </li>
-                                        <li>
-                                            <a href="Parking_Control.html">Parking Control</a>
-                                        </li>
-                                        <li>
-                                            <a href="Softwares.html">Softwares</a>
-                                        </li>
-                                    </ul>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Solution.html">Solution
-                                    <ul>
-                                        <li>
-                                            <a href="Integrated_Smart_Security_System.html">Integrated Smart Security System</a>
-                                        </li>
-                                        <li>
-                                            <a href="Weigh_in_Motion_System.html">Weigh in Motion</a>
-                                        </li>
-                                        <li>
-                                            <a href="Structure_Health_Monitoring_System.html">Structure Health Monitoring System</a>
-                                        </li>
-                                        <li>
-                                            <a href="Construction.html">Construction</a>
-                                        </li>
-                                    </ul>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Markets.html">Markets
-                                    <ul>
-                                        <li>
-                                            <a href="Telecom.html">Telecom</a>
-                                        </li>
-                                        <li>
-                                            <a href="industrial.html">Industrial</a>
-                                        </li>
-                                        <li>
-                                            <a href="Governmental_Building.html">Governmental Building</a>
-                                        </li>
-                                        <li>
-                                            <a href="Commercial_Building.html">Commercial Building</a>
-                                        </li>
-                                        <li>
-                                            <a href="Residential_Building.html">Residential Building</a>
-                                        </li>
-                                        <li>
-                                            <a href="Data_Center.html">Data Center</a>
-                                        </li>
-                                        <li>
-                                            <a href="Logistics.html">Logistics</a>
-                                        </li>
-                                        <li>
-                                            <a href="infrastructures.html">infrastructures</a>
-                                        </li>
-                                    </ul>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="Become_Our_Partner.html">Partners</a>
-                            </li>
-                            <li>
-                                <ul>
-                                    <li>
-                                        <a href="Company_Profile.html">About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="join_us.html">Join Us</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="contact_us.html">Contact Us</a></li>
-                        </ul>
-                    </button>
-                    </div>
-                </div>
+        <!-- Right elements -->
+        <ul
+          class="list-style-none ms-auto flex flex-row ps-0 md:ps-4"
+          data-twe-navbar-nav-ref
+        >
+          <!-- Products dropdown Trigger -->
+          <li class="relative px-2 hidden md:flex" data-twe-dropdown-ref>
+            <a
+              class="hidden-arrow flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
+              href="#"
+              role="button"
+              data-twe-dropdown-toggle-ref
+              aria-expanded="false"
+            >
+              <strong class="[&>svg]:h-6 [&>svg]:w-6"> Products </strong>
+            </a>
+            <ul
+              class="absolute z-[1000] float-left hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-surface-dark data-[twe-dropdown-show]:block"
+              aria-labelledby="dropdownMenuButton1"
+              data-twe-dropdown-menu-ref
+            >
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Products/Monitoring.html"
+                  data-twe-dropdown-item-ref
+                  >Monitoring</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Products/Sensors.html"
+                  data-twe-dropdown-item-ref
+                  >Sensors</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Products/Access-Controls.html"
+                  data-twe-dropdown-item-ref
+                  >Access Control</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Products/Parking-Management.html"
+                  data-twe-dropdown-item-ref
+                  >Parking Management</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Products/Data-Centers.html"
+                  data-twe-dropdown-item-ref
+                  >Data Center</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Products/Softwares.html"
+                  data-twe-dropdown-item-ref
+                  >Softwares</a
+                >
+              </li>
+            </ul>
+            <!-- First dropdown trigger -->
+          </li>
+
+          <!-- Solutions dropdown trigger -->
+          <li class="relative px-2 hidden md:flex" data-twe-dropdown-ref>
+            <a
+              class="hidden-arrow flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
+              href=""
+              role="button"
+              data-twe-dropdown-toggle-ref
+              aria-expanded="false"
+            >
+              <strong class="[&>svg]:h-6 [&>svg]:w-6"> Solutions </strong>
+            </a>
+            <ul
+              class="absolute z-[1000] float-left hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-surface-dark data-[twe-dropdown-show]:block"
+              aria-labelledby="dropdownMenuButton1"
+              data-twe-dropdown-menu-ref
+            >
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Solutions/IntegratedSmartSecuritySystem.html"
+                  data-twe-dropdown-item-ref
+                  >Integrated Smart Security System</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Solutions/WeighinMotion.html"
+                  data-twe-dropdown-item-ref
+                  >Weigh In Motion</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Solutions/StructureHealthMonitoringSystem.html"
+                  data-twe-dropdown-item-ref
+                  >Structure Health Monitoring System</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Solutions/Vehicle-Parking-Management-System.html"
+                  data-twe-dropdown-item-ref
+                  >Vehicle Parking Management System</a
+                >
+              </li>
+            </ul>
+
+            <!-- First dropdown trigger -->
+          </li>
+
+          <!-- Markets dropdown trigger -->
+          <li class="relative px-2 hidden lg:flex" data-twe-dropdown-ref>
+            <a
+              class="hidden-arrow flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
+              href=""
+              role="button"
+              data-twe-dropdown-toggle-ref
+              aria-expanded="false"
+            >
+              <strong class="[&>svg]:h-6 [&>svg]:w-6"> Markets </strong>
+            </a>
+            <ul
+              class="absolute z-[1000] float-left hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-surface-dark data-[twe-dropdown-show]:block"
+              aria-labelledby="dropdownMenuButton1"
+              data-twe-dropdown-menu-ref
+            >
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Markets/Telecom.html"
+                  data-twe-dropdown-item-ref
+                  >Telecom</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Markets/Govermental.html"
+                  data-twe-dropdown-item-ref
+                  >Goverment</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Markets/Infrastructures.html"
+                  data-twe-dropdown-item-ref
+                  >infrastructures</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Markets/Industrial Area.html"
+                  data-twe-dropdown-item-ref
+                  >Industrial Area</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Markets/Commercial Buildings.html"
+                  data-twe-dropdown-item-ref
+                  >Commercial Buildings</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Markets/Residential Area.html Area.html Area.html"
+                  data-twe-dropdown-item-ref
+                  >Residential Area</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Markets/Parking Area.html Area.html"
+                  data-twe-dropdown-item-ref
+                  >Parking Area</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="Markets/Data Centers.html"
+                  data-twe-dropdown-item-ref
+                  >Data Center</a
+                >
+              </li>
+            </ul>
+
+            <!-- First dropdown trigger -->
+          </li>
+
+          <!-- Partners -->
+          <li class="px-2 hidden lg:flex" data-twe-nav-item-ref>
+            <a
+              class="flex text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
+              href="Become Our Partner/become-a-partner.html"
+              data-twe-nav-link-ref
+            >
+              <strong class="ms-1 sm:block">Partners</strong>
+            </a>
+          </li>
+
+          <!-- About Us Dropdown trigger  -->
+          <li class="relative px-2 hidden lg:flex" data-twe-dropdown-ref>
+            <a
+              class="hidden-arrow flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
+              href=""
+              role="button"
+              data-twe-dropdown-toggle-ref
+              aria-expanded="false"
+            >
+              <strong class="[&>svg]:h-6 [&>svg]:w-6"> About </strong>
+            </a>
+            <ul
+              class="absolute z-[1000] float-left hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-surface-dark data-[twe-dropdown-show]:block"
+              aria-labelledby="dropdownMenuButton1"
+              data-twe-dropdown-menu-ref
+            >
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="About Us/company.html"
+                  data-twe-dropdown-item-ref
+                  >Company</a
+                >
+              </li>
+              <li>
+                <a
+                  class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                  href="About Us/Joinus.html"
+                  data-twe-dropdown-item-ref
+                  >Join Us</a
+                >
+              </li>
+            </ul>
+
+            <!-- First dropdown trigger -->
+          </li>
+
+          <!-- Contact Us -->
+          <li class="px-2 hidden lg:flex" data-twe-nav-item-ref>
+            <a
+              class="flex text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
+              href="Contact Us/contactus.html"
+              data-twe-nav-link-ref
+            >
+              <strong class="ms-1 sm:block">Contact</strong>
+            </a>
+          </li>
+
+          <!-- Login Button -->
+          <li class="px-2" data-twe-nav-item-ref>
+            <a
+              class="flex text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
+              href="Signin.html"
+              data-twe-nav-link-ref
+            >
+              <span class="[&>svg]:h-6 [&>svg]:w-6">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  fill="currentColor"
+                >
+                  <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    fill-rule="evenodd"
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="hidden">Login</span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="w-full">
+      <div class="relative mt-16">
+        <img src="Asset/66.jpg" alt="man pressing Solution" />
+        <div class="absolute top-20 lg:top-72 left-3 lg:left-10">
+          <h1 class="font-extrabold text-sm text-white lg:text-5xl">
+            AI-POWERED TECHNOLOGY
+          </h1>
+          <h2 class="text-sm text-white lg:text-3xl">
+            Personally tailored for you
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- solution -->
+    <div class="container mx-auto px-4">
+      <section>
+        <h2 class="text-4xl font-extrabold pb-8 pt-4 pl-2 shadow-lg">
+          solution
+        </h2>
+        <ul>
+          <li class="shadow-lg mb-8 rounded-lg overflow-hidden">
+            <div>
+              <img
+                src="Asset/13.jpg"
+                alt="Facility Management at your Finger Tips"
+              />
             </div>
-                
-                
-       
-           
-            <section class="container mx-auto px-4">menu
-                
-            </section>
-        </header>
-        -->
-<!-- 
-        <main class="container mx-auto px-4 pt-24 lg:pt-32 pb-12">
-            <!-- hero -->
-     
-     
-        <nav class="relative flex w-full flex-wrap items-center justify-between bg-zinc-50 py-2 shadow-dark-mild dark:bg-neutral-700 lg:py-4">
-            <div class="flex w-full flex-wrap items-center justify-between px-3">
-            
-            <!-- Left elements -->
-              <div class="flex">
-                <!-- Brand -->
-                <a class="mx-2 my-1 flex items-center lg:mb-0 lg:mt-0" href="index.html">
-                  <img
-                    class="me-2"
-                    src="Asset/LOGO PT/Logo-BKKA-Transparant.png"
-                    style="height: 20px"
-                    alt="PT. BATUKARANG KENAN ABADI Logo"
-                    loading="lazy" />
-                </a>
-                <h1 class="mx-auto hidden flex-row ps-0 text-blue-700">PT. BATU KARANG KENAN ABADI</h1>
+            <div class="p-6 relative">
+              <h3 class="text-lg font-bold mb-4">
+                Integrated Smart Security System
+              </h3>
+              <p class="text-base mb-6">
+                Protecting what matters should be effortless. Our Integrated
+                Smart Security System combines the latest in surveillance,
+                access control, and real-time alerts to provide seamless
+                security for your assets. With intelligent monitoring and
+                customizable features, this system adapts to your unique needs,
+                offering peace of mind around the clock. Curious about how smart
+                security can enhance your protection? Click ‘Learn More’ or
+                reach out to us for a personalized consultation!
+              </p>
+              <a
+                href="IntegratedSmartSecuritySystem.html"
+                class="text-sm text-blue-500 font-bold border-2 border-blue-500 rounded-2xl mb-8 p-2 px-14 shadow-lg hover:text-white hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300"
+                >Learn More</a
+              >
+            </div>
+          </li>
+
+          <li class="shadow-lg mb-8 rounded-lg overflow-hidden">
+            <div>
+              <img
+                src="Asset/IMG_9708.JPG"
+                alt="Moving truck are weighed on the road"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-base font-bold mb-4">Weigh in Motion System</h3>
+              <p class="text-sm mb-4">
+                Traffic efficiency and road safety start with accurate
+                measurements. Our Weigh-in-Motion System is designed to monitor
+                vehicle weight in real-time, without stopping traffic flow. With
+                advanced technology and high accuracy, this system helps
+                optimize road capacity, prevent early wear and tear, and ensure
+                compliance with load regulations. Click ‘Learn More’ to see how
+                this solution can enhance the efficiency of your
+                transportation infrastructure!
+              </p>
+              <a
+                href="WeighinMotionSystem.html"
+                class="text-sm text-blue-500 font-bold border-2 border-blue-500 rounded-2xl mb-8 p-2 px-14 shadow-lg hover:text-white hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300"
+                >Learn More</a
+              >
+            </div>
+          </li>
+
+          <li class="shadow-lg mb-8 rounded-lg overflow-hidden">
+            <div>
+              <img
+                src="Asset/image6710.png"
+                alt="Moving truck are weighed on the road"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-4">
+                Intelligent Structure Health Monitoring System
+              </h3>
+              <p class="text-sm mb-4">
+                Structural integrity is a sustainable investment. Our
+                Intelligent Structure Health Monitoring System helps you
+                maintain the performance and durability of structures by
+                detecting potential damage early with high precision. Equipped
+                with smart sensors and real-time data analysis, this system
+                offers optimal protection for buildings, bridges, and other
+                vital infrastructure. Interested in keeping your assets safe and
+                well-maintained? Click ‘Learn More’ or contact us
+                for more details.
+              </p>
+              <a
+                href="StructureHealthManagementSystem.html"
+                class="text-sm text-blue-500 font-bold border-2 border-blue-500 rounded-2xl mb-8 p-2 px-14 shadow-lg hover:text-white hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300"
+                >Learn More</a
+              >
+            </div>
+          </li>
+
+          <li class="shadow-lg mb-8 rounded-lg overflow-hidden">
+            <div>
+              <img
+                src="Asset/PKLot-image-examples-Figures-a-b-and-c-show-examples-of-different-parking-lots.jpg"
+                alt="Moving truck are weighed on the road"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-4">
+                Vehicle Parking Management System
+              </h3>
+              <p class="text-sm mb-4">
+                Structural integrity is a sustainable investment. Our
+                Intelligent Structure Health Monitoring System helps you
+                maintain the performance and durability of structures by
+                detecting potential damage early with high precision. Equipped
+                with smart sensors and real-time data analysis, this system
+                offers optimal protection for buildings, bridges, and other
+                vital infrastructure. Interested in keeping your assets safe and
+                well-maintained? Click ‘Learn More’ or contact us
+                for more details.
+              </p>
+              <a
+                href="Solutions/Vehicle-Parking-Management-System.html"
+                class="text-sm text-blue-500 font-bold border-2 border-blue-500 rounded-2xl mb-8 p-2 px-14 shadow-lg hover:text-white hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300"
+                >Learn More</a
+              >
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Products -->
+    <!--Tabs navigation-->
+
+    <div class="container mx-auto px-4">
+      <section>
+        <h2 class="text-4xl font-extrabold pb-8 pt-4 pl-2 shadow-lg">
+          Products
+        </h2>
+        <ul
+          class="flex list-none flex-col flex-wrap ps-0 shadow-lg mb-8 rounded-lg overflow-hidden"
+          role="tablist"
+          data-twe-nav-ref
+        >
+          <li role="presentation" class="flex-grow text-center">
+            <a
+              href="#tabs-monitoring"
+              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary"
+              data-twe-toggle="pill"
+              data-twe-target="#tabs-monitoring"
+              data-twe-nav-active
+              role="tab"
+              aria-controls="tabs-monitoring"
+              aria-selected="true"
+              >Monitoring</a
+            >
+          </li>
+          <li role="presentation" class="flex-grow text-center">
+            <a
+              href="#tabs-sensors"
+              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary"
+              data-twe-toggle="pill"
+              data-twe-target="#tabs-sensors"
+              role="tab"
+              aria-controls="tabs-sensors"
+              aria-selected="false"
+              >Sensors</a
+            >
+          </li>
+          <li role="presentation" class="flex-grow text-center">
+            <a
+              href="#tabs-access-control"
+              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary"
+              data-twe-toggle="pill"
+              data-twe-target="#tabs-access-control"
+              role="tab"
+              aria-controls="tabs-access-control"
+              aria-selected="false"
+              >Access Control</a
+            >
+          </li>
+          <li role="presentation" class="flex-grow text-center">
+            <a
+              href="#tabs-parking-management"
+              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary"
+              data-twe-toggle="pill"
+              data-twe-target="#tabs-parking-management"
+              role="tab"
+              aria-controls="tabs-parking-management"
+              aria-selected="false"
+              >Parking Management</a
+            >
+          </li>
+          <li role="presentation" class="flex-grow text-center">
+            <a
+              href="#tabs-data-center"
+              class="my-2 block border-x-0 border-b-2 border-t-0 border-transparent px-7 pb-3.5 pt-4 text-xs font-medium uppercase leading-tight text-neutral-500 hover:isolate hover:border-transparent hover:bg-neutral-100 focus:isolate focus:border-transparent data-[twe-nav-active]:border-primary data-[twe-nav-active]:text-primary dark:text-white/50 dark:hover:bg-neutral-700/60 dark:data-[twe-nav-active]:text-primary"
+              data-twe-toggle="pill"
+              data-twe-target="#tabs-data-center"
+              role="tab"
+              aria-controls="tabs-data-center"
+              aria-selected="false"
+              >Data Center</a
+            >
+          </li>
+        </ul>
+
+        <!--Tabs content Monitoring-->
+        <div class="shadow-lg mb-8 rounded-lg overflow-hidden">
+          <div class="mb-6">
+            <div
+              class="hidden opacity-100 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+              id="tabs-monitoring"
+              role="tabpanel"
+              aria-labelledby="tabs-monitoring"
+              data-twe-tab-active
+            >
+              <!--Container-->
+              <div class="max-w-3xl mx-auto px-4 sm:px-6">
+                <img src="Asset/14.jpg" alt="CCTV camera active monitoring" />
               </div>
-              <!-- Left elements -->
-          
-              <!-- Center elements -->
-              <ul
-                class="list-style-none mx-auto hidden flex-row ps-0 md:flex"
-                data-twe-navbar-nav-ref>
-
-                <li class="px-2" data-twe-nav-item-ref>
-                    <form class="hidden md:flex">
-                        <div class="flex w-[30%] items-center justify-between">
-                            <input
-                                type="search"
-                                class="relative m-0 block flex-auto rounded-lg border border-solid border-secondary-500 bg-transparent bg-clip-padding px-3 py-1.5 text-base font-normal text-surface transition duration-300 ease-in-out focus:border-primary focus:text-gray-700 focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:bg-body-dark dark:text-white dark:placeholder:text-neutral-300 dark:autofill:shadow-autofill"
-                                placeholder="Search"
-                                aria-label="Search"
-                                aria-describedby="button-addon2" />
-                            
-                            <!--Search icon-->
-                            <span
-                    class="flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-gray-600 dark:text-white [&>svg]:w-5"
-                    id="basic-addon2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor">
-                      <path
-                        fill-rule="evenodd"
-                        d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z"
-                        clip-rule="evenodd" />
-                    </svg>
-                            </span>
-                        </div>
-                    </form>
-                </li>
-              </ul>
-              <!-- Center elements -->
-          
-              <!-- Right elements -->
-              <ul
-                class="list-style-none ms-auto hidden flex-row ps-0 md:flex"
-                data-twe-navbar-nav-ref>
-                
-                  <li class="px-2" data-twe-nav-item-ref>
-
-                    <a
-                    class="flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                    href="Products.html"
-                    type="button"
-                    id="dropdownMenuButton2"
-                    data-twe-dropdown-toggle-ref
-                    aria-expanded="false">
-                    Products
-                    <span class="ms-1 [&>svg]:w-5">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path
-                          fill-rule="evenodd"
-                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </span>
-                    </a>
-                        <ul
-                            class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark"
-                            aria-labelledby="dropdownMenuButton1"
-                            data-twe-dropdown-menu-ref>
-
-                            <li>
-                                <a
-                                class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                href="Monitoring.html"
-                                data-twe-dropdown-item-ref
-                                >Monitoring</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                href="Sensors.html"
-                                data-twe-dropdown-item-ref
-                                >Sensors</a
-                                >
-                                </li>
-                            <li>
-                                <a
-                                class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                href="Access-Control.html"
-                                data-twe-dropdown-item-ref
-                                >Access Control</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                href="Parking-Control.html"
-                                data-twe-dropdown-item-ref
-                                >Parking Control</a>
-                            </li>
-
-                  <!-- Disabled the link -->
-                            <li
-                            class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
-                            data-twe-nav-link-ref>
-                                <a
-                                class="pointer-events-none text-black/30 dark:text-white/30 lg:px-2"
-                                >Disabled</a
-                                >
-                            </li>
-                        </ul>
-                  </li>
-            
-                  <li class="px-2" data-twe-nav-item-ref>
-                    <a
-                      class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
-                      href="Solutions.html"
-                      type="button"
-                      id="dropdownMenuButton2"
-                      data-twe-dropdown-toggle-ref
-                      aria-expanded="false">
-                     Solutions
-                     <span class="ms-1 [&>svg]:w-5">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 20 20"
-                          fill="currentColor">
-                          <path
-                            fill-rule="evenodd"
-                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                            clip-rule="evenodd" />
-                        </svg>
-                      </span>
-                    </a>
-                        <ul
-                        class="absolute z-[1000] float-left m-0 hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg data-[twe-dropdown-show]:block dark:bg-surface-dark"
-                        aria-labelledby="dropdownMenuButton1"
-                        data-twe-dropdown-menu-ref>
-
-                            <li>
-                                <a
-                                class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                                href="IntegratedSmartSecuritySystem.html"
-                                data-twe-dropdown-item-ref
-                                >Integrated Smart Security System</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                        class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                        href="Weigh_in_motion.html"
-                        data-twe-dropdown-item-ref
-                        >Weigh in motion</a
-                        >
-                        </li>
-                    <li>
-                        <a
-                        class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                        href="Access-Control.html"
-                        data-twe-dropdown-item-ref
-                        >Access Control</a
-                        >
-                    </li>
-                    <li>
-                        <a
-                        class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                        href="Parking-Control.html"
-                        data-twe-dropdown-item-ref
-                        >Parking Control</a>
-                    </li>
-
-          <!-- Disabled the link -->
-                    <li
-                    class="mb-4 ps-2 lg:mb-0 lg:pe-1 lg:ps-0"
-                    data-twe-nav-link-ref>
-                        <a
-                        class="pointer-events-none text-black/30 dark:text-white/30 lg:px-2"
-                        >Disabled</a
-                        >
-                    </li>
-                </ul>
-                </li>
-            
-                  <li class="px-2" data-twe-nav-item-ref>
-                    <a
-                      class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
-                      href="Markets.html"
-                      data-twe-nav-link-ref>
-                      Markets
-                    </a>
-                  </li>
-            
-                  <li class="px-2" data-twe-nav-item-ref>
-                    <a
-                      class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
-                      href="Become-a-Partner.html"
-                      data-twe-nav-link-ref>
-                     Partners
-                    </a>
-                  </li>
-            
-                  <li class="px-2" data-twe-nav-item-ref>
-                    <a
-                      class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
-                      href="CompanyProfile.html"
-                      data-twe-nav-link-ref>
-                      About
-                    </a>
-                  </li>
-  
-                  <li class="px-2" data-twe-nav-item-ref>
-                      <a
-                        class="text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
-                        href="contactus.html"
-                        data-twe-nav-link-ref>
-                        Contact
-                      </a>
-                    </li>
-
-
-
-              
-          
-                <li class="relative px-2" data-twe-dropdown-ref>
-                  <!-- First dropdown trigger -->
-                  <a
-                    class="hidden-arrow flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
-                    href="#"
-                    id="dropdownMenuButton1"
-                    role="button"
-                    data-twe-dropdown-toggle-ref
-                    aria-expanded="false">
-                    <!-- Dropdown trigger icon -->
-                    <span class="[&>svg]:h-6 [&>svg]:w-6">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path
-                          d="M3.505 2.365A41.369 41.369 0 019 2c1.863 0 3.697.124 5.495.365 1.247.167 2.18 1.108 2.435 2.268a4.45 4.45 0 00-.577-.069 43.141 43.141 0 00-4.706 0C9.229 4.696 7.5 6.727 7.5 8.998v2.24c0 1.413.67 2.735 1.76 3.562l-2.98 2.98A.75.75 0 015 17.25v-3.443c-.501-.048-1-.106-1.495-.172C2.033 13.438 1 12.162 1 10.72V5.28c0-1.441 1.033-2.717 2.505-2.914z" />
-                        <path
-                          d="M14 6c-.762 0-1.52.02-2.271.062C10.157 6.148 9 7.472 9 8.998v2.24c0 1.519 1.147 2.839 2.71 2.935.214.013.428.024.642.034.2.009.385.09.518.224l2.35 2.35a.75.75 0 001.28-.531v-2.07c1.453-.195 2.5-1.463 2.5-2.915V8.998c0-1.526-1.157-2.85-2.729-2.936A41.645 41.645 0 0014 6z" />
-                      </svg>
-                    </span>
-                    <!-- Notification counter -->
-                    <span
-                      class="absolute -mt-6 ms-5 rounded-full bg-danger px-[0.50em] py-[0.25em] text-[0.6rem] font-bold leading-none text-white"
-                      >6</span
-                    >
-                  </a>
-                  <!-- Dropdown menu -->
-                  <ul
-                    class="absolute z-[1000] float-left hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-surface-dark data-[twe-dropdown-show]:block"
-                    aria-labelledby="dropdownMenuButton1"
-                    data-twe-dropdown-menu-ref>
-                    <!-- Dropdown menu items -->
-                    <li>
-                      <a
-                        class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                        href="joinus.html"
-                        data-twe-dropdown-item-ref
-                        >Join Us</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                        href="monitoring.html"
-                        data-twe-dropdown-item-ref
-                        >Monitoring</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                        href="Security.html"
-                        data-twe-dropdown-item-ref
-                        >Security</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-          
-                <li
-                  class="relative px-2"
-                  data-twe-dropdown-ref
-                  data-twe-dropdown-alignment="end">
-                  <!-- Second dropdown trigger -->
-                  <a
-                    class="hidden-arrow mr flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
-                    href="#"
-                    id="dropdownMenuButton1"
-                    role="button"
-                    data-twe-dropdown-toggle-ref
-                    aria-expanded="false">
-                    <!-- Dropdown trigger icon -->
-                    <span class="[&>svg]:h-6 [&>svg]:w-6">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                          fill-rule="evenodd"
-                          d="M5.25 9a6.75 6.75 0 0113.5 0v.75c0 2.123.8 4.057 2.118 5.52a.75.75 0 01-.297 1.206c-1.544.57-3.16.99-4.831 1.243a3.75 3.75 0 11-7.48 0 24.585 24.585 0 01-4.831-1.244.75.75 0 01-.298-1.205A8.217 8.217 0 005.25 9.75V9zm4.502 8.9a2.25 2.25 0 104.496 0 25.057 25.057 0 01-4.496 0z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </span>
-                    <!-- Notification counter -->
-                    <span
-                      class="absolute -mt-6 ms-3 rounded-full bg-danger px-[0.50em] py-[0.25em] text-[0.6rem] font-bold leading-none text-white"
-                      >12</span
-                    >
-                  </a>
-                  <!-- Dropdown menu -->
-                  <ul
-                    class="absolute z-[1000] float-left hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-surface-dark data-[twe-dropdown-show]:block"
-                    aria-labelledby="dropdownMenuButton1"
-                    data-twe-dropdown-menu-ref>
-                    <!-- Dropdown menu items -->
-                    <li>
-                      <a
-                        class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                        href="#"
-                        data-twe-dropdown-item-ref
-                        >Some news</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                        href="#"
-                        data-twe-dropdown-item-ref
-                        >Another news</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                        href="#"
-                        data-twe-dropdown-item-ref
-                        >Something else here</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-          
-                <li
-                  class="relative px-2"
-                  data-twe-dropdown-ref
-                  data-twe-dropdown-alignment="end">
-                  <!-- Third dropdown trigger -->
-                  <a
-                    class="hidden-arrow mr flex items-center text-black/60 transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80"
-                    href="#"
-                    id="dropdownMenuButton1"
-                    role="button"
-                    data-twe-dropdown-toggle-ref
-                    aria-expanded="false">
-                    <!-- Dropdown trigger icon -->
-                    <span class="[&>svg]:h-6 [&>svg]:w-6">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path
-                          fill-rule="evenodd"
-                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                          clip-rule="evenodd" />
-                      </svg>
-                    </span>
-                  </a>
-                  <!-- Dropdown menu -->
-                  <ul
-                    class="absolute z-[1000] float-left hidden min-w-max list-none overflow-hidden rounded-lg border-none bg-white bg-clip-padding text-left text-base shadow-lg dark:bg-surface-dark data-[twe-dropdown-show]:block"
-                    aria-labelledby="dropdownMenuButton1"
-                    data-twe-dropdown-menu-ref>
-                    <!-- Dropdown menu items -->
-                    <li>
-                      <a
-                        class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                        href="#"
-                        data-twe-dropdown-item-ref
-                        >Some news</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                        href="#"
-                        data-twe-dropdown-item-ref
-                        >Another news</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="block w-full whitespace-nowrap bg-white px-4 py-2 text-sm font-normal text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
-                        href="#"
-                        data-twe-dropdown-item-ref
-                        >Something else here</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <!-- Right elements -->
+              <div class="p-4">
+                <h3 class="text-lg font-bold mb-4">Monitoring</h3>
+                <p class="text-sm mb-4">
+                  Streamlined your operations with integration of IoT devices
+                  and AI at its core. More productivity, higher efficientcy with
+                  less effort.
+                </p>
+                <a
+                  href="Products/Monitoring.html"
+                  class="text-blue-500 hover:text-white hover:bg-blue-600 active:bg-blue-700"
+                  >Explore</a
+                >
+                <i class="fa-solid fa-arrow-right-long text-blue-500"></i>
+              </div>
             </div>
-          </nav>     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-            <section class="container mx-auto px-4">
-                <ul>
-                    <li>
-                        <div class="relative ">
-                        <video class=" " src="Asset/VIDEO2/1.mp4" alt="Hero Video" autoplay muted loop></video>
-                        </div>
-                    </li>
-                    <li>
-                        <h2 class="absolute left-5 top-10 text-blue-500 text sm">AI-POWERED TECHNOLOGY</h2>
-                        <h2 class="absolute left-5 top-20 text-blue-500 text sm">Specialy tailored for you</h2>
-                    </li>
-                    <li>
-                        <button>
-                        <a href="Solution.html" class="absolute left-5 top-21 text-blue-500 text sm border-blue-500">Explore</a>
-                        </button>
-                    </li>
-                </ul>
-               
-            </section> 
+          </div>
+        </div>
 
-
-
-
-
-
-
-
-
-            <div id="default-carousel" class="relative w-full" data-carousel="slide">
-                <!-- Carousel wrapper -->
-                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-                     <!-- Item 1 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/docs/images/carousel/carousel-1.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 2 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/docs/images/carousel/carousel-2.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 3 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/docs/images/carousel/carousel-3.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 4 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/docs/images/carousel/carousel-4.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 5 -->
-                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                        <img src="/docs/images/carousel/carousel-5.svg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                </div>
-                <!-- Slider indicators -->
-                <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
-                </div>
-                <!-- Slider controls -->
-                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                        </svg>
-                        <span class="sr-only">Previous</span>
-                    </span>
-                </button>
-                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                        </svg>
-                        <span class="sr-only">Next</span>
-                    </span>
-                </button>
+        <!--Tabs content Sensors-->
+        <div class="shadow-lg mb-8 rounded-lg overflow-hidden">
+          <div
+            class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+            id="tabs-sensors"
+            role="tabpanel"
+            aria-labelledby="tabs-sensors"
+          >
+            <div class="max-w-3xl mx-auto px-4 sm:px-6">
+              <!--Container-->
+              <img
+                src="Asset/PRODUCT WEBSITE/QSY8946 Surface strainmeter.png"
+                alt="Moving truck are weighed on the road"
+              />
             </div>
-            
+            <div class="p-4">
+              <h3 class="text-base font-bold mb-4">Sensors</h3>
+              <p class="text-sm mb-4">
+                Streamlined your operations with integration of IoT devices and
+                AI at its core. More productivity, higher efficientcy with less
+                effort.
+              </p>
+              <a
+                href="Products/Sensors.html"
+                class="text-blue-500 hover:text-white hover:bg-blue-600 active:bg-blue-700"
+                >Explore</a
+              >
+              <i class="fa-solid fa-arrow-right-long text-blue-500"></i>
+            </div>
+          </div>
+        </div>
 
+        <!--Tabs content Access Control-->
+        <div class="shadow-lg mb-8 rounded-lg overflow-hidden">
+          <div
+            class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+            id="tabs-access-control"
+            role="tabpanel"
+            aria-labelledby="tabs-access-control"
+          >
+            <div class="max-w-3xl mx-auto px-4 sm:px-6">
+              <img
+                src="Asset/1.jpg"
+                alt="a regular man scanning face for door access"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-4">Access Control</h3>
+              <p class="text-sm mb-4">
+                Streamlined your operations with integration of IoT devices and
+                AI at its core. More productivity, higher efficientcy with less
+                effort.
+              </p>
+              <a
+                href="Products/Access-Controls.html"
+                class="text-blue-500 hover:text-white hover:bg-blue-600 active:bg-blue-700"
+                >Explore</a
+              >
+              <i class="fa-solid fa-arrow-right-long text-blue-500"></i>
+            </div>
+          </div>
+        </div>
 
+        <!--Tabs content Parking Management-->
+        <div class="shadow-lg mb-8 rounded-lg overflow-hidden">
+          <div
+            class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+            id="tabs-parking-management"
+            role="tabpanel"
+            aria-labelledby="tabs-parking-management"
+          >
+            <div class="max-w-3xl mx-auto px-4 sm:px-6">
+              <img
+                src="Asset/8551f8c1-a641-4973-bc7d-242e526dbb11_Banner.png"
+                alt="Showing a parking area, remotely monitored by system and connected to mobile phone and security room"
+              />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-4">Parking Management</h3>
+              <p class="text-sm mb-4">
+                Streamlined your operations with integration of IoT devices and
+                AI at its core. More productivity, higher efficientcy with less
+                effort.
+              </p>
+              <a
+                href="Products/Parking-Management.html"
+                class="text-blue-500 hover:text-white hover:bg-blue-600 active:bg-blue-700"
+                >Explore</a
+              >
+              <i class="fa-solid fa-arrow-right-long text-blue-500"></i>
+            </div>
+          </div>
+        </div>
 
+        <!--Tabs content Data Center-->
+        <div class="shadow-lg mb-8 rounded-lg overflow-hidden">
+          <div
+            class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[twe-tab-active]:block"
+            id="tabs-data-center"
+            role="tabpanel"
+            aria-labelledby="tabs-data-center"
+          >
+            <div class="max-w-3xl mx-auto px-4 sm:px-6">
+              <img src="Asset/22.jpg" alt="server racks are lined up orderly" />
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-bold mb-4">Data Center</h3>
+              <p class="text-sm mb-4">
+                Streamlined your operations with integration of IoT devices and
+                AI at its core. More productivity, higher efficientcy with less
+                effort.
+              </p>
+              <a
+                href="Products/Data-Centers.html"
+                class="text-blue-500 hover:text-white hover:bg-blue-600 active:bg-blue-700"
+                >Explore</a
+              >
+              <i class="fa-solid fa-arrow-right-long text-blue-500"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
+    <!-- Markets -->
+    <div class="container mx-auto px-4">
+      <section>
+        <h2 class="text-4xl font-extrabold pb-8 pt-4 pl-2 shadow-lg">Market</h2>
+        <div
+          id="carouselIndicators"
+          class="relative"
+          data-twe-carousel-init
+          data-twe-ride="carousel"
+        >
+          <!--Carousel indicators-->
+          <div
+            class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+            data-twe-carousel-indicators
+          >
+            <button
+              type="button"
+              data-twe-target="#carouselIndicators"
+              data-twe-slide-to="0"
+              data-twe-carousel-active
+              class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-current="true"
+              aria-label="Telecom"
+            ></button>
+            <button
+              type="button"
+              data-twe-target="#carouselIndicators"
+              data-twe-slide-to="1"
+              class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-label="Goverment"
+            ></button>
+            <button
+              type="button"
+              data-twe-target="#carouselIndicators"
+              data-twe-slide-to="2"
+              class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-label="Infrastructures"
+            ></button>
+            <button
+              type="button"
+              data-twe-target="#carouselIndicators"
+              data-twe-slide-to="3"
+              class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-label="Industrial Area"
+            ></button>
+            <button
+              type="button"
+              data-twe-target="#carouselIndicators"
+              data-twe-slide-to="4"
+              class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-label="Commercial Buildings"
+            ></button>
+            <button
+              type="button"
+              data-twe-target="#carouselIndicators"
+              data-twe-slide-to="5"
+              class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-label="Residential Buildings"
+            ></button>
+            <button
+              type="button"
+              data-twe-target="#carouselIndicators"
+              data-twe-slide-to="6"
+              class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-label="Parking Area"
+            ></button>
+            <button
+              type="button"
+              data-twe-target="#carouselIndicators"
+              data-twe-slide-to="7"
+              class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+              aria-label="Data Center"
+            ></button>
+          </div>
 
-
-
-
-
-
-
-             <!-- solution -->
-            <div class="container mx-auto px-4">
-                <section>
-                    <h2 class="text-4xl font-extrabold pb-8 pt-4 pl-2 shadow-lg">solution</h2>
-                    <ul>
-                        <li class="shadow-lg mb-8 rounded-lg overflow-hidden">
-                            <div>
-                                <img src="Asset/13.jpg" alt="Facility Management at your Finger Tips" >
-                            </div>
-                            <div class="p-6 relative">
-                                <h3 class="text-lg font-bold mb-4 ">Integrated Smart Security System</h3>
-                                <p class="text-base mb-6 ">
-                                 Streamlined your operations with integration of IoT devices and AI at its core. More productivity, higher efficientcy with less effort.
-                                </p>
-                                <a href="IntegratedSmartSecuritySystem.html" class="text-sm text-blue-500 font-bold border-2 border-blue-500 rounded-2xl mb-8 p-2 px-14 shadow-lg hover:text-white hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300">Learn More</a>
-                            </div>
-                        </li>
-
-                        <li class="shadow-lg mb-8 rounded-lg overflow-hidden">
-                            <div>
-                                <img src="Asset/17.jpg" alt="Moving truck are weighed on the road" >
-                            </div>
-                            <div class="p-4">
-                                <h3 class="text-base font-bold mb-4 ">Weigh in Motion System</h3>
-                                <p class="text-sm mb-4 ">
-                                    Streamlined your operations with integration of IoT devices and AI at its core. More productivity, higher efficientcy with less effort.
-                                </p>
-                                <a href="WeighinMotionSystem.html"  class="text-sm text-blue-500 font-bold border-2 border-blue-500 rounded-2xl mb-8 p-2 px-14 shadow-lg hover:text-white hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300">Learn More</a>
-                            </div>
-                        </li>
-
-                        <li class="shadow-lg mb-8 rounded-lg overflow-hidden">
-                            <div>
-                                <img src="Asset/17.jpg" alt="Moving truck are weighed on the road" >
-                            </div>
-                            <div class="p-4">
-                                <h3 class="text-lg font-bold mb-4 ">Structure Health Monitoring System</h3>
-                                <p class="text-sm mb-4 ">
-                                    Streamlined your operations with integration of IoT devices and AI at its core. More productivity, higher efficientcy with less effort.
-                                </p>
-                                <a href="StructureHealthManagementSystem.html" class="text-sm text-blue-500 font-bold border-2 border-blue-500 rounded-2xl mb-8 p-2 px-14 shadow-lg hover:text-white hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300">Learn More</a>
-                               
-                            </div>
-                        </li>
-                    </ul>
-                </section>
+          <!--Carousel items-->
+          <div
+            class="relative w-full overflow-hidden after:clear-both after:block after:content-['']"
+          >
+            <!--First item-->
+            <div
+              class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-twe-carousel-item
+              data-twe-carousel-active
+            >
+              <img src="Asset/3.png" class="block w-full" alt="Telecom Tower" />
             </div>
 
-            <!-- Products -->
-            <div class="container mx-auto px-4">
-                <section>
-                    <h2 class="text-2xl font-bold mb-8">Products</h2>
-                    <ul>
-                        <li class="shadow-lg mb-8 rounded-lg overflow-hidden">
-                            <div>
-                                <img src="Asset/14.jpg" alt="CCTV camera active monitoring" >
-                            </div>
-                            <div class="p-4">
-                                <h3 class="text-lg font-bold mb-4 ">Monitoring</h3>
-                                <p class="text-sm mb-4 ">
-                                 Streamlined your operations with integration of IoT devices and AI at its core. More productivity, higher efficientcy with less effort.
-                                </p>
-                                <a href="IntegratedSmartSecuritySystem.html" class="text-blue-500 hover:text-white hover:bg-blue-600 active:bg-blue-700">Explore</a>
-                                <i class="fa-solid fa-arrow-right-long text-blue-500 " ></i>
-                            </div>
-                        </li>
-
-                        <li class="shadow-lg mb-8 rounded-lg overflow-hidden">
-                            <div>
-                                <img src="Asset/17.jpg" alt="Moving truck are weighed on the road" >
-                            </div>
-                            <div class="p-4">
-                                <h3 class="text-base font-bold mb-4 ">Sensors</h3>
-                                <p class="text-sm mb-4 ">
-                                    Streamlined your operations with integration of IoT devices and AI at its core. More productivity, higher efficientcy with less effort.
-                                </p>
-                                <a href="WeighinMotionSystem.html"  class="text-blue-500 hover:text-white hover:bg-blue-600 active:bg-blue-700">Explore</a>
-                                <i class="fa-solid fa-arrow-right-long text-blue-500"></i>
-                            </div>
-                        </li>
-
-                        <li class="shadow-lg mb-8 rounded-lg overflow-hidden">
-                            <div>
-                                <img src="Asset/1.jpg" alt="a regular man scanning face for door access" >
-                            </div>
-                            <div class="p-4">
-                                <h3 class="text-lg font-bold mb-4 ">Access Control</h3>
-                                <p class="text-sm mb-4 ">
-                                    Streamlined your operations with integration of IoT devices and AI at its core. More productivity, higher efficientcy with less effort.
-                                </p>
-                                <a href="StructureHealthManagementSystem.html" class="text-blue-500 hover:text-white hover:bg-blue-600 active:bg-blue-700">Explore</a>
-                                <i class="fa-solid fa-arrow-right-long text-blue-500"></i>
-                            </div>
-                        </li>
-                        <li class="shadow-lg mb-8 rounded-lg overflow-hidden">
-                            <div>
-                                <img src="Asset/8551f8c1-a641-4973-bc7d-242e526dbb11_Banner.png" alt="Showing a parking area, remotely monitored by system and connected to mobile phone and security room" >
-                            </div>
-                            <div class="p-4">
-                                <h3 class="text-lg font-bold mb-4 ">Parking Control</h3>
-                                <p class="text-sm mb-4 ">
-                                    Streamlined your operations with integration of IoT devices and AI at its core. More productivity, higher efficientcy with less effort.
-                                </p>
-                                <a href="StructureHealthManagementSystem.html" class="text-blue-500 hover:text-white hover:bg-blue-600 active:bg-blue-700">Explore</a>
-                                <i class="fa-solid fa-arrow-right-long text-blue-500"></i>
-                            </div>
-                        </li>
-                        <li class="shadow-lg mb-8 rounded-lg overflow-hidden">
-                            <div>
-                                <img src="Asset/22.jpg" alt="server racks are lined up orderly" >
-                            </div>
-                            <div class="p-4">
-                                <h3 class="text-lg font-bold mb-4 ">Data Center</h3>
-                                <p class="text-sm mb-4 ">
-                                    Streamlined your operations with integration of IoT devices and AI at its core. More productivity, higher efficientcy with less effort.
-                                </p>
-                                <a href="StructureHealthManagementSystem.html" class="text-blue-500 hover:text-white hover:bg-blue-600 active:bg-blue-700">Explore</a>
-                                <i class="fa-solid fa-arrow-right-long text-blue-500"></i>
-                            </div>
-                        </li>
-                        <li class="shadow-lg mb-8 rounded-lg overflow-hidden">
-                            <div>
-                                <img src="Asset/17.jpg" alt="Moving truck are weighed on the road" >
-                            </div>
-                            <div class="p-4">
-                                <h3 class="text-lg font-bold mb-4 ">Softwares</h3>
-                                <p class="text-sm mb-4 ">
-                                    Streamlined your operations with integration of IoT devices and AI at its core. More productivity, higher efficientcy with less effort.
-                                </p>
-                                <a href="StructureHealthManagementSystem.html" class="text-blue-500 hover:text-white hover:bg-blue-600 active:bg-blue-700">Explore</a>
-                                <i class="fa-solid fa-arrow-right-long text-blue-500"></i>
-                            </div>
-                        </li>
-                    </ul>
-                </section>
+            <!--Second item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-twe-carousel-item
+            >
+              <img
+                src="Asset/DPR11.png"
+                class="block w-full"
+                alt="Goverment Buildings"
+              />
             </div>
-                <!-- Markets -->
-            <section class="container mx-auto px-4">market
-                
-                
-            </section>
+            <!--Third item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-twe-carousel-item
+            >
+              <img
+                src="Asset/74.jpg"
+                class="block w-full"
+                alt="Infrastructures"
+              />
+            </div>
+            <!--Fourth item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-twe-carousel-item
+            >
+              <img
+                src="Asset/2.png"
+                class="block w-full"
+                alt="Industrial Area"
+              />
+            </div>
+            <!--Fifth item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-twe-carousel-item
+            >
+              <img
+                src="Asset/4.png"
+                class="block w-full"
+                alt="Commercial Buildings"
+              />
+            </div>
+            <!--sixth item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-twe-carousel-item
+            >
+              <img
+                src="Asset/5.png"
+                class="block w-full"
+                alt="Residential Buildings"
+              />
+            </div>
+            <!--seventh item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-twe-carousel-item
+            >
+              <img
+                src="Asset/Parking Area.png"
+                class="block w-full"
+                alt="Parking Area"
+              />
+            </div>
+            <!--seventh item-->
+            <div
+              class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+              data-twe-carousel-item
+            >
+              <img src="Asset/22.jpg" class="block w-full" alt="Data Center" />
+            </div>
+          </div>
 
-            <!-- Encouragement -->
-            <section class="container mx-auto px-4">encouragement
-                <ul>
-                    <li>
-                        <img src="Asset/LOGO PT/Logo-BKKA-Transparant.png" alt="THEY TRUST PT. BATUKARANG KENAN ABADI">
-                    </li>
-                    <li>
-                        <h2>THEY TRUST PT. BATUKARANG KENAN ABADI</h2>
-                    </li>
-                </ul>
-            </section>
+          <!--Carousel controls - prev item-->
+          <button
+            class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button"
+            data-twe-target="#carouselIndicators"
+            data-twe-slide="prev"
+          >
+            <span class="inline-block h-8 w-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5L8.25 12l7.5-7.5"
+                />
+              </svg>
+            </span>
+            <span
+              class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+              >Previous</span
+            >
+          </button>
+          <!--Carousel controls - next item-->
+          <button
+            class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+            type="button"
+            data-twe-target="#carouselIndicators"
+            data-twe-slide="next"
+          >
+            <span class="inline-block h-8 w-8">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="h-6 w-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </span>
+            <span
+              class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+              >Next</span
+            >
+          </button>
+        </div>
+      </section>
+    </div>
 
-            <!-- Subscribe -->
-            <section class="container mx-auto px-4">subscribe
-                <ul>
-                    <li>
-                        <img src="Asset/LOGO PT/Logo-BKKA-Transparant.png" alt="PEOPLE WORKING TOGETHER">
-                    </li>
-                    <li>
-                        <h2><em>Subscribe</em>to stay up to date with our latest <em>TECHNOLOGY</em></h2>
-                    </li>
-                    <li>
-                        <input type="email" placeholder="Business Email" name="subscribe-form">
-                    </li>
-                    <li>
-                        <button>Subscribe</button>
-                    </li>
-                </ul>
-            </section>
+    <!-- Keperluan Tugas asymetric grid - remove after use -->
+    <section id="scenario-photos">
+      <h2>Project Scenarios</h2>
+      <div class="grid-container">
+        <div class="scenario" id="scenario-1">
+          <img src="Asset/8.png" alt="A road inside a tunnel." />
+        </div>
+        <div class="scenario" id="scenario-2">
+          <img src="Asset/16.png" alt="A telecom tower." />
+        </div>
+        <div class="scenario" id="scenario-3">
+          <img src="Asset/65.jpg" alt="A parking lot." />
+        </div>
+        <div class="scenario" id="scenario-4">
+          <img
+            src="Asset/Tower Compound 7_JPG.jpg"
+            alt="A telecom tower with fences."
+          />
+        </div>
+        <div class="scenario" id="scenario-5">
+          <img src="Asset/DPR2.png" alt="A goverment building." />
+        </div>
+      </div>
+    </section>
 
-            <!-- Footer -->
-            <footer>
-                <div>
-                    <ul class="flex flex-col">
-                        <li>
-                            <a href="Index.html">
-                                <img src="Asset/LOGO PT/Logo-BKKA-Transparant.png" alt="PT. BATUKARANG KENAN ABADI LOGO">
-                            </a>
-                        </li>
-                        
-                        <li>
-                            <ul class="mb-4 flex-row">
-                                <li >
-                                    <a href="https://instagram.com">
-                                        <img src="Asset/instagram.png" alt="Instagram">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://facebook.com">
-                                        <img src="Asset/facebook.png" alt="PT. Facebook">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://X.com">
-                                        <img src="Asset/twitter.png" alt="X">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://youtube.com">
-                                        <img src="Asset/youtube.png" alt="Youtube">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://linkedin.com">
-                                        <img src="Asset/linkedin.png" alt="LinkedIn">
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <p>&copy; 2024. PT.BATUKARANG KENAN ABADI. All rights reserved.</p>
-                        </li>
-                        <li class="underline text-blue-500">
-                            <a href="privacy-policy.html">Privacy Policy</a>
-                        </li>
-                    </ul>
-                </div>
-                
-                
-            </footer>
-        </main>
-    </body>
+    <!-- Encouragement -->
+    <section class="mx-auto my-8 px-4">
+      <img
+        class="mx-auto"
+        src="Asset/they trust bka.png"
+        alt="THEY TRUST PT. BATUKARANG KENAN ABADI"
+      />
+    </section>
+
+    <!-- Subscribe -->
+    <section class="mx-auto px-4">
+      <div class="">
+        <img
+          class="mx-auto w-full"
+          src="Asset/subs.png"
+          alt="Subscribe to get the latest news and updates from PT. BATUKARANG KENAN ABADI."
+        />
+        <div class="relative mb-4 flex w-full flex-wrap items-stretch">
+          <input
+            type="email"
+            class="relative m-0 -me-px block flex-auto rounded-s border border-solid border-neutral-200 bg-transparent bg-clip-padding px-3 py-[0.25rem] text-base font-normal leading-[1.6] text-surface outline-none transition duration-200 ease-in-out placeholder:text-neutral-500 focus:z-[3] focus:border-primary focus:shadow-inset focus:outline-none motion-reduce:transition-none dark:border-white/10 dark:text-white dark:placeholder:text-neutral-200 dark:autofill:shadow-autofill dark:focus:border-primary"
+            placeholder="Bussiness E-Mail"
+            aria-label="Bussiness E-Mail"
+            aria-describedby="button-Subscribe"
+          />
+          <button
+            class="z-[2] inline-block rounded-e border-2 border-primary-100 px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:border-primary-accent-200 hover:bg-secondary-50/50 focus:border-primary-accent-200 focus:bg-secondary-50/50 focus:outline-none focus:ring-0 active:border-primary-accent-200 dark:border-primary-400 dark:text-primary-300 dark:hover:bg-blue-950 dark:focus:bg-blue-950"
+            data-twe-ripple-init
+            type="button"
+            id="button-Subscribe"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full">
+      <div class="w-fit flex flex-row space-x-5">
+        <!-- Company footer-->
+        <div class="flex flex-col">
+          <!--Company logo footer-->
+          <div class="mx-auto">
+            <div>
+              <a href="Index.html">
+                <img
+                  class="h-10 mb-4 mx-3"
+                  src="Asset/LOGO PT/Logo-BKKA-Transparant.png"
+                  alt="PT. BATUKARANG KENAN ABADI LOGO"
+                />
+              </a>
+            </div>
+
+            <!-- Company Socmed footer-->
+            <div class="flex flex-row mx-1">
+              <div>
+                <a href="https://instagram.com">
+                  <img
+                    class="h-3 px-1"
+                    src="Asset/instagram.png"
+                    alt="Instagram"
+                  />
+                </a>
+              </div>
+              <div>
+                <a href="https://facebook.com">
+                  <img
+                    class="h-3 px-1"
+                    src="Asset/facebook.png"
+                    alt="PT. Facebook"
+                  />
+                </a>
+              </div>
+              <div>
+                <a href="https://X.com">
+                  <img class="h-3 px-1" src="Asset/twitter.png" alt="X" />
+                </a>
+              </div>
+              <div>
+                <a href="https://youtube.com">
+                  <img class="h-3 px-1" src="Asset/youtube.png" alt="Youtube" />
+                </a>
+              </div>
+              <div>
+                <a href="https://linkedin.com">
+                  <img
+                    class="h-3 px-1"
+                    src="Asset/linkedin.png"
+                    alt="LinkedIn"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Company Copyright footer-->
+          <div>
+            <p class="text-[10px] mt-2 mx-4 text-center">
+              &copy; 2024. PT.BATUKARANG KENAN ABADI. All rights reserved.
+            </p>
+            <p class="text-[10px] text-center">
+              <a class="mt-2 mx-4 underline" href="privacy-policy.html"
+                >Privacy Policy</a
+              >
+            </p>
+          </div>
+
+          <!-- Company Privacy Policy footer-->
+          <div class="underline text-blue-500"></div>
+        </div>
+        <!-- Products footer-->
+        <div class="mx-auto flex flex-col">
+          <a class="mb-2 font-bold" href="Products/Products.html">Products</a>
+          <a href="Products/Monitoring.html">Monitoring</a>
+          <a href="Products/Sensors.html">Sensors</a>
+          <a href="Products/Access-Controls.html">Access Control</a>
+          <a href="Products/Parking-Management.html">Parking Management</a>
+          <a href="Products/Data-Centers.html">Data Center</a>
+          <a href="Products/Softwares.html">Softwares</a>
+        </div>
+        <!-- Markets footer-->
+        <div class="mx-auto flex flex-col">
+          <a class="mb-2 font-bold" href="Markets/Markets.html">Markets</a>
+          <a href="Markets/Telecom.html">Telecom</a>
+          <a href="Markets/Govermental.html">Goverment</a>
+          <a href="Markets/Infrastructures.html">Infrastructures</a>
+          <a href="Markets/Industrial Area.html">Industrial Area</a>
+          <a href="Markets/Commercial Buildings.html">Commercial Building</a>
+          <a href="Markets/Residential Area.html">Residential Area</a>
+          <a href="Markets/Parking Area.html Area.html">Parking Area</a>
+          <a href="Markets/Data Centers.html">Data Center</a>
+        </div>
+        <div class="mx-auto flex flex-col">
+          <span class="mb-2 font-bold">Partners</span>
+          <a href="Become Our Partner/become-a-partner.html"
+            >Become our Partner</a
+          >
+          <span class="my-2 font-bold">About Us</span>
+          <a href="About Us/company.html">Company Profile</a>
+          <a href="About Us/Joinus.html">Join Us</a>
+          <a class="mt-2 font-bold" href="Contact Us/contactus.html"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+  </body>
 </html>
-
-<!-- Planning
- 1. bikin header sticky
-    a. logo
-    b. search bar
-    c. menu
- 2. bikin hero
-    a. image hero
-    b. text hero
-    c. button hero
- 3. bikin solution
-    a. 4 solution
- 4. bikin product
-    a. monitoring
-    b. sensor
-    c. access control
-    d. parking control
-    e. products
- 5. bikin market
-    a. solutions
-    b. telecom
-    c. security
-    d. industrial
-    e. infrastructures
-    f. residential building
-    g. data center
-    h. commercial building
-    i. logistics
-    j. governmental building
- 6. bikin encouragement
-    a. img
-    b. text
- 7. bikin subscribe
-    a. img
-    b. text
-    c. form subscribe
-    d. button subscribe
- 8. bikin footer
-    a. company
-      a.1. logo
-      a.2. name
-      a.3. address
-      a.4. email
-      a.5. social media
-      a.6. copyright
-      a.7. privacy policy
-    b. products
-    c. markets
-    d. contact us  
-     -->

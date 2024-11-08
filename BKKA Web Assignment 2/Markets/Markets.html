@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeCats</title>
+    <link rel="icon" href="Asset/LOGO PT/Logo-BKKA-Transparant.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="index.html" class="logo">
+        <img src="Asset/LOGO PT/Logo-BKKA-Transparant.png" alt="Logo" />
+      </a>
+      <nav class="navbar-links" id="navbar-links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="markets.html">Markets</a>
+        <a href="partners.html">Partners</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+      </nav>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="markets.html">Clients</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <span class="hamburger" id="hamburger" onclick="toggleMenu()"
+        >&#9776;</span
+      >
+    </header>
+    <section class="Hero">
+      <img src="Asset/28.jpg" alt="IoT for your Bussiness" class="feature-img"/>
+      <div>
+
+      </div>
+      
+    </section>
+
+   
+
+    <section class="feature-caption" id="products">
+      
+      <h1>Integrated IoT Devices in One System With AI Technology at Its Core</h1>
+      <p>
+        Streamlined your operations with integration of IoT devices and AI at
+        its core. More productivity, higher efficientcy with less effort
+      </p>
+      
+    </section>
+
+    <section class="gallery" id="gallery">
+      <h1>Our Markets</h1>
+      <p>Specifics Solution for Critical Sites and Equipments</p>
+      <div class="image-gallery">
+        <img
+          src="Asset/Tower Compound 7_JPG.jpg"
+          alt="Telecom"
+          class="thumbnail"
+          onclick="openModal(0)"
+        />
+        <img
+          src="Asset/22.jpg"
+          alt="Data Center"
+          class="thumbnail"
+          onclick="openModal(1)"
+        />
+        <img
+          src="Asset/Electric Fence.jpg"
+          alt="Oil and Gas"
+          class="thumbnail"
+          onclick="openModal(2)"
+        />
+        <img
+          src="Asset/10.jpg"
+          alt="Security"
+          class="thumbnail"
+          onclick="openModal(3)"
+        />
+        <img
+          src="Asset/1666924399.jpeg"
+          alt="Airport"
+          class="thumbnail"
+          onclick="openModal(4)"
+        />
+        <img
+          src="Asset/1608627863068.jpeg"
+          alt="Office Buildings"
+          class="thumbnail"
+          onclick="openModal(5)"
+        />
+        <img
+          src="Asset/jakarta-photo-6.jpeg"
+          alt="Apartments"
+          class="thumbnail"
+          onclick="openModal(6)"
+        />
+        <img
+          src="Asset/65.jpg"
+          alt="Parking Lots"
+          class="thumbnail"
+          onclick="openModal(7)"
+        />
+      </div>
+      <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <a class="prev" onclick="changeSlide(-1)">&#10094</a>
+        <img class="modal-content" id="img01"/>
+        <a class="next" onclick="changeSlide(1)">&#10095</a>
+        <div id="caption"></div>
+      </div>
+          
+   
+
+    <script src="script.js"></script>
+    </section>
+
+  </body>
+</html>
