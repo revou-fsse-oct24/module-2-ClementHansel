@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="glowing.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Text Shine Effect (hover)</p>
+    <script>
+      const p = document.querySelector("p");
+      const letters = Array.from(p.innerText);
+
+      const middles = [];
+      middles.length = Math.floor(letters.length * 0.2);
+      middles.fill("middle");
+
+      const sides = [];
+      sides.length = Math.floor(letters.length * 0.15);
+      sides.fill("sides");
+
+      const classes = [];
+      classes.length = Math.round(letters.length * 0.25);
+      classes.fill("edge");
+
+      classes.push(...sides, ...middles, ...sides);
+
+      p.innerHTML = letters
+        .map((l) => {
+          const className = classes.shift() || "edge";
+          return `<span class="${className}">${l}</span>`;
+        })
+        .join("");
+    </script>
+  </body>
+</html>

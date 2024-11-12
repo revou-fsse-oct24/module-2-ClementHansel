@@ -1,17 +1,46 @@
 #scenario-photos .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 8px;
-  grid-auto-rows: 240px 240px 240px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 4px;
+  grid-template-rows: 25% 25% 25% 25%;
+  overflow: hidden;
 }
 
 .grid-container #scenario-1 {
-  grid-column: 1 / 2 span;
+  grid-column: 1 / 4 span;
   grid-row: 1;
 }
-.scenario-photos {
+
+.grid-container #scenario-2 {
+  grid-column: 1 / 2 span;
+  grid-row: 2;
+}
+
+.grid-container #scenario-3 {
+  grid-column: 3 / 4 span;
+  grid-row: 2;
+}
+
+.grid-container #scenario-4 {
+  grid-column: 1;
+  grid-row: 3;
+}
+.grid-container #scenario-5 {
+  grid-column: 2 / 3 span;
+  grid-row: 3;
+}
+
+.grid-container #scenario-6 {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.scenario {
   filter: grayscale(100%);
-  cursor: pointer;
+}
+
+:hover .scenario {
+  filter: none;
 }
 
 #scenario-photos .grid-container img {
